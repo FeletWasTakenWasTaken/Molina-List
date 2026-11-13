@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOLINA LIST</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>MOLINA LIST</h1>
+  <button id="new" class="pri" hidden>Nuevo record</button>
+  <button id="auth">Admin</button>
+</header>
+<main>
+  <section class="panel" id="left">
+    <input id="q" type="search" placeholder="Buscar nivel" aria-label="Buscar nivel">
+    <ol id="list"></ol>
+  </section>
+  <section class="panel" id="mid"></section>
+  <section class="panel" id="right">
+    <h2>Records <span id="rc"></span></h2>
+    <ul id="recs"></ul>
+    <div id="pager"></div>
+  </section>
+</main>
+<dialog id="dlg"></dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
